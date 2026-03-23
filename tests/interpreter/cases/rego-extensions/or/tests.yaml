@@ -44,8 +44,8 @@ cases:
       resource:
         type: "Microsoft.Storage/storageaccounts"
         properties:
-        networksAcls:
-          ipRules: ["rule1", "rule2"]
+          networkAcls:
+            ipRules: ["rule1", "rule2"]
       parameters:
         effect: "Deny"
     query: data.policy.effect
